@@ -387,19 +387,14 @@ mouseRef.current = mousePos;
           {/* Spatial Holographic Avatar Container */}
           <div className="relative group mb-8">
             <div className="absolute -inset-2 bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-500 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
-            <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden border-2 border-cyan-400/80 shadow-[0_0_30px_rgba(6,182,212,0.4)] bg-slate-950 flex flex-col items-center justify-center text-center p-2 backdrop-blur-md">
-              {userPhoto ? (
-                <img src={userPhoto} alt="Vanishree Malli" className="w-full h-full object-cover rounded-full" style={{ objectPosition: 'center 5%' }} />
-              ) : (
-                <div className="flex flex-col items-center justify-center p-4">
-                  <div className="text-4xl mb-1">👩‍💻</div>
-                  <p className="text-[11px] text-cyan-300 font-mono leading-tight mb-2">
-                    Upload Photograph
-                  </p>
-                  
-                </div>
-              )}
-            </div>
+            <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden border-2 border-cyan-400/80 shadow-[0_0_30px_rgba(6,182,212,0.4)] bg-slate-950 flex flex-col items-center justify-center">
+  <img 
+    src="/profile.jpeg" 
+    alt="Vanishree Malli" 
+    className="w-full h-full object-cover rounded-full" 
+    style={{ objectPosition: 'center 5%' }} 
+  />
+</div>
 
             {/* Orbiting Tech Badges */}
             <div className="absolute -top-2 -right-2 bg-slate-950/90 border border-purple-400/60 text-purple-200 text-[10px] sm:text-xs font-mono px-3 py-1 rounded-full shadow-lg backdrop-blur-md animate-bounce">
@@ -966,3 +961,4 @@ mouseRef.current = mousePos;
     </div>
   );
 }
+
