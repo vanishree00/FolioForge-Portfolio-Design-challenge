@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import profileImg from './profile.jpeg';
 
 
 
@@ -137,7 +138,7 @@ const ThreeBackground = ({ activeSection, mousePos }) => {
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [userPhoto, setUserPhoto] = useState<string>('/profile.jpeg');
+ const [userPhoto, setUserPhoto] = useState<string>(profileImg)
   const [selectedProject, setSelectedProject] = useState(null);
   const [customCursor, setCustomCursor] = useState({ x: 0, y: 0, hovered: false });
   const [activeSkillCategory, setActiveSkillCategory] = useState('all');
